@@ -17,7 +17,8 @@
     Menu (Rectangle fond,Rectangle titre, Rectangle grapheFinal, Ligne choix_1, Ligne choix_2);
     Menu ();
     ~Menu ();
-    void dessiner (BITMAP* page);
+    void dessinerBasique (BITMAP* page);
+    void dessinerKrus (BITMAP* page);
  } ;
 
 

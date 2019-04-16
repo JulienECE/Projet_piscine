@@ -26,7 +26,7 @@ int rouge= makecol(255,0,0);
     {
 
     Menu a;
-    a.dessiner(page);
+    a.dessinerBasique(page);
 if ((mouse_b &1 == 1)&&(mouse_x >460)&&(mouse_x< 720)&&(mouse_y<90)&&(mouse_y >60))
     {
         Rectangle a(30,30,300,300,rouge);

@@ -19,11 +19,10 @@ m_choix_2 = Ligne (450,180,720,180,noir);
 
 
 Menu:: ~Menu ()
-
 {}
 
 
-void Menu::dessiner(BITMAP *page)
+void Menu::dessinerBasique(BITMAP *page)
 {
     int noir = makecol(0,0,0);
     int rouge = makecol (255,0,0);
@@ -43,4 +42,9 @@ void Menu::dessiner(BITMAP *page)
     line  (page, mouse_x,mouse_y, mouse_x, mouse_y+10, rouge);
     line  (page, mouse_x,mouse_y, mouse_x, mouse_y-10, rouge);
     blit (page,screen, 0,0, 0, 0,SCREEN_W,SCREEN_H);
+}
+
+void Menu::dessinerKrus(BITMAP *page)
+{
+
 }
