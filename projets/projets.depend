@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1555343846 source:c:\users\gesli\desktop\projet piscine\projets\main.cpp
+	"menu.h"
+
+1555343176 source:c:\users\gesli\desktop\projet piscine\projets\menu.cpp
+	"menu.h"
+
+1555335121 source:c:\users\gesli\desktop\projet piscine\projets\sommet.cpp
+
+1555341181 source:c:\users\gesli\desktop\projet piscine\projets\rectangle.cpp
+	"Rectangle.h"
+
+1555339298 c:\users\gesli\desktop\projet piscine\projets\rectangle.h
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<allegro.h>
+	<time.h>
+	<unistd.h>
+
+1555342836 c:\users\gesli\desktop\projet piscine\projets\menu.h
+	"rectangle.h"
+	"cercle.h"
+	"ligne.h"
+
+1555341181 source:c:\users\gesli\desktop\projet piscine\projets\cercle.cpp
+	"cercle.h"
+
+1555338959 c:\users\gesli\desktop\projet piscine\projets\cercle.h
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<allegro.h>
+	<time.h>
+	<unistd.h>
+
+1555337998 c:\users\gesli\desktop\projet piscine\projets\ligne.h
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<allegro.h>
+	<time.h>
+	<unistd.h>
+
+1555341181 source:c:\users\gesli\desktop\projet piscine\projets\ligne.cpp
+	"ligne.h"
+
