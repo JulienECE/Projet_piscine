@@ -1,5 +1,6 @@
 #ifndef MENU_H_INCLUDED
 #define MENU_H_INCLUDED
+#include "graphe.h"
 #include "rectangle.h"
 #include "cercle.h"
 #include "ligne.h"
@@ -17,8 +18,10 @@
     Menu (Rectangle fond,Rectangle titre, Rectangle grapheFinal, Ligne choix_1, Ligne choix_2);
     Menu ();
     ~Menu ();
-    void dessinerBasique (BITMAP* page);
-    void dessinerKrus (BITMAP* page);
+    void dessinerBasique (BITMAP* page, graphe g);
+    void dessinerKrus (BITMAP* page, graphe g);
+    void dessinerPareto (BITMAP* page, graphe g);
+    graphe Graphe_P1_K (BITMAP* page, graphe g);
  } ;
 
 

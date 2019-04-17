@@ -1,7 +1,7 @@
-
 #include "menu.h"
-
+#include "graphe.h"
 using namespace std;
+
 
 int main()
 {
@@ -16,27 +16,27 @@ int main()
         allegro_exit();
         exit(EXIT_FAILURE);}
 
-int rouge= makecol(255,0,0);
+
     BITMAP * page;
     page=create_bitmap(SCREEN_W,SCREEN_H);
     clear_bitmap(page);
-
+    graphe g("manhattan.txt","manhattan_weights_0.txt");
 
     while(!key[KEY_ESC])
     {
 
-    Menu a;
-    a.dessinerBasique(page);
-if ((mouse_b &1 == 1)&&(mouse_x >460)&&(mouse_x< 720)&&(mouse_y<90)&&(mouse_y >60))
-    {
-        Rectangle a(30,30,300,300,rouge);
-        a.dessinerFill(page);
-        blit (page,screen, 0,0, 0, 0,SCREEN_W,SCREEN_H);
-    }
-if ((mouse_b &1 == 1)&&(mouse_x >460)&&(mouse_x< 720)&&(mouse_y<180)&&(mouse_y >150))
-    {
-
-    }
+        Menu a,b,c;
+        a.dessinerBasique(page,g);
+        if ((mouse_b &1 == 1)&&(mouse_x >460)&&(mouse_x< 720)&&(mouse_y<90)&&(mouse_y >60))
+        {
+             while (!key [KEY_N]){
+            b.dessinerKrus(page,g);}
+        }
+        if ((mouse_b &1 == 1)&&(mouse_x >460)&&(mouse_x< 720)&&(mouse_y<180)&&(mouse_y >150))
+        {
+            while (!key [KEY_N]){
+            c.dessinerPareto(page,g);}
+        }
 
     }
     return 0;
